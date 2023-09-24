@@ -20,7 +20,7 @@
     </header>
     <main>
         <section>
-            <form method="POST">
+            <form method="POST" id="main-form">
                 <fieldset>
 
                     <legend>Informações pessoais</legend>
@@ -29,24 +29,24 @@
 
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" value=""/>
+                            <input type="text" name="name" value="" required/>
                         </div>
 
                         <div class="input-wrapper">
                             <label for="lastName">Sobrenome</label>
-                            <input type="text" name="lastName" value=""/>
+                            <input type="text" name="lastName" value="" required/>
                         </div>
 
                     </div>
 
                     <div class="input-wrapper">
                         <label for="email">Email <span>(digite um email válido)</span></label>
-                        <input type="email" name="email" value=""/>
+                        <input type="email" name="email" value="" required/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
-                        <input type="password" name="password" value=""/>
+                        <input type="password" name="password" value="" required/>
                     </div>
 
                 </fieldset>
@@ -57,7 +57,7 @@
 
                     <div class="input-wrapper">
                         <label>Nome do seu mentor <span>(só o primeiro nome)</span></label>
-                        <input type="email" name="email" value=""/>
+                        <input type="email" name="mentor" value="" required/>
                     </div>
 
                 </fieldset>
@@ -72,18 +72,18 @@
 
                         <div class="input-wrapper">
                             <label for="date-mentoria1">Data <span>(DD/MM/AAAA)</span></label>
-                            <input type="date" name="date-mentoria1" value=""/>
+                            <input type="date" name="date-mentoria1" value="" required/>
                         </div>
 
                         <div class="time-wrapper">
                             <div class="input-wrapper">
                                 <label for="das-mentoria1">Das</label>
-                                <input type="time" name="das-mentoria1" value=""/>
+                                <input type="time" name="das-mentoria1" value="" required/>
                             </div>
     
                             <div class="input-wrapper">
                                 <label for="ate-mentoria1">Até</label>
-                                <input type="time" name="ate-mentoria1" value=""/>
+                                <input type="time" name="ate-mentoria1" value="" required/>
                             </div>
                         </div>
 
@@ -95,18 +95,18 @@
 
                         <div class="input-wrapper">
                             <label for="date-mentoria2">Data <span>(DD/MM/AAAA)</span></label>
-                            <input type="date" name="date-mentoria2" value=""/>
+                            <input type="date" name="date-mentoria2" value="" required/>
                         </div>
 
                         <div class="time-wrapper">
                             <div class="input-wrapper">
                                 <label for="das-mentoria2">Das</label>
-                                <input type="time" name="das-mentoria2" value=""/>
+                                <input type="time" name="das-mentoria2" value="" required/>
                             </div>
     
                             <div class="input-wrapper">
                                 <label for="ate-mentoria2">Até</label>
-                                <input type="time" name="ate-mentoria2" value=""/>
+                                <input type="time" name="ate-mentoria2" value="" required/>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@
 
     <footer>
         <button
-        for="form">
+        form="main-form">
             SALVAR
         </button>
     </footer>
