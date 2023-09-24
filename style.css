@@ -136,6 +136,10 @@ label span {
     outline: 1px solid var(--back-lines-in-white-hover);
 }
 
+.input-wrapper input:not(:required):not(:focus):invalid  {
+    border-color: #FF1010;
+}
+
 .date-wrapper {
     display: flex;
     gap: 32px;

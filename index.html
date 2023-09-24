@@ -29,24 +29,24 @@
 
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" value="" required/>
+                            <input type="text" name="name" minlength="8"/>
                         </div>
 
                         <div class="input-wrapper">
                             <label for="lastName">Sobrenome</label>
-                            <input type="text" name="lastName" value="" required/>
+                            <input type="text" name="lastName" minlength="8"/>
                         </div>
 
                     </div>
 
                     <div class="input-wrapper">
                         <label for="email">Email <span>(digite um email válido)</span></label>
-                        <input type="email" name="email" value="" required/>
+                        <input type="email" name="email" value=""/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
-                        <input type="password" name="password" value="" required/>
+                        <input type="password" name="password" minlength="6"/>
                     </div>
 
                 </fieldset>
@@ -57,7 +57,7 @@
 
                     <div class="input-wrapper">
                         <label>Nome do seu mentor <span>(só o primeiro nome)</span></label>
-                        <input type="email" name="mentor" value="" required/>
+                        <input type="text" name="mentor" minlength="8"/>
                     </div>
 
                 </fieldset>
@@ -126,5 +126,6 @@
             SALVAR
         </button>
     </footer>
+
   </body>
 </html>
